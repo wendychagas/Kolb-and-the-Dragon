@@ -389,6 +389,12 @@ fimprocedimento
 //------------------------------------------------------------------------------
 procedimento Pagina_Onze()
 inicio
+
+      LimpaTela
+      escreval("-------------------------")
+      escreval(" = >   P Á G I N A    XI ")
+      escreval("-------------------------")
+      escreval()
       escreval("Kolb rastejou em direção à barriga da fera,")
       escreval("mas assim que ele tirou os olhos da cabeça da fera,")
       escreval("ela o agarrou e o comeu inteiro com machado e tudo.")
@@ -486,8 +492,8 @@ inicio
       escreval("Kolb balançou seu machado o mais forte que pôde,")
       escreval("mas o fantasma mal pareceu notar. O fantasma")
       escreval("mergulhou em Kolb, e um sono profundo o dominou,")
-      escrevaal("do qual ele nunca mais acordou.")
-      eescreval()
+      escreval("do qual ele nunca mais acordou.")
+      escreval()
       escreval("-------------------------")
       escreval("Você morreu! Fim do Jogo!")
       escreval("-------------------------")
