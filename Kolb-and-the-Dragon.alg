@@ -1,4 +1,6 @@
 algoritmo "Kolb and the Dragon"
+var
+   enter: Caracter
 //------------------------------------------------------------------------------
 procedimento MenuInicial()
 var
@@ -20,7 +22,9 @@ inicio
       caso "2"
            Instrucao()
       caso "3"
+           LimpaTela
       outrocaso
+               LimpaTela
       fimescolha
 fimprocedimento
 //------------------------------------------------------------------------------
@@ -50,6 +54,8 @@ inicio
       escreval("[15] Parte XV")
       escreval("[16] Parte XVI")
       escreval("[17] Parte XVII")
+      escreval()
+      escreval("[ENTER] Voltar.")
       escreval("_________________________")
       escreva("Decisão => ")
       leia(opPagina)
@@ -90,7 +96,8 @@ inicio
       caso "17"
            Pagina_Dezessete()
       outrocaso
-      
+               LimpaTela
+               MenuInicial()
       fimescolha
 fimprocedimento
 //------------------------------------------------------------------------------
@@ -109,6 +116,12 @@ inicio
       escreval("Para jogar basta digitar o número da")
       escreval("ação correspondente disponivel em cada")
       escreval("uma das 'páginas' do livro.")
+      escreval()
+      escreva("[ENTER] Voltar.")
+      leia(enter)
+      
+      LimpaTela
+      MenuInicial()
 fimprocedimento
 //------------------------------------------------------------------------------
 procedimento Pagina_Um()
@@ -307,6 +320,12 @@ inicio
       escreval("-------------------------")
       escreval("Você morreu! Fim do Jogo!")
       escreval("-------------------------")
+      escreval()
+      escreva("[ENTER] Reiniciar.")
+      leia(enter)
+      
+      LimpaTela
+      MenuInicial()
 fimprocedimento
 //------------------------------------------------------------------------------
 procedimento Pagina_Nove()
@@ -323,6 +342,12 @@ inicio
       escreval("-------------------------")
       escreval("Você morreu! Fim do Jogo!")
       escreval("-------------------------")
+      escreval()
+      escreva("[ENTER] Reiniciar.")
+      leia(enter)
+      
+      LimpaTela
+      MenuInicial()
 fimprocedimento
 //------------------------------------------------------------------------------
 procedimento Pagina_Dez
@@ -355,6 +380,9 @@ inicio
       escreval("-------------------------")
       escreval("Você morreu! Fim do Jogo!")
       escreval("-------------------------")
+      escreval()
+      escreva("[ENTER] Reiniciar.")
+      MenuInicial()
 fimprocedimento
 //------------------------------------------------------------------------------
 procedimento Pagina_Doze()
@@ -421,6 +449,12 @@ inicio
       escreval("-------------------------")
       escreval("Você morreu! Fim do Jogo!")
       escreval("-------------------------")
+      escreval()
+      escreva("[ENTER] Reiniciar.")
+      leia(enter)
+      
+      LimpaTela
+      MenuInicial()
 fimprocedimento
 //------------------------------------------------------------------------------
 procedimento Pagina_Quinze()
@@ -438,6 +472,12 @@ inicio
       escreval("-------------------------")
       escreval("Você morreu! Fim do Jogo!")
       escreval("-------------------------")
+      escreval()
+      escreva("[ENTER] Reiniciar.")
+      leia(enter)
+      
+      LimpaTela
+      MenuInicial()
 fimprocedimento
 //------------------------------------------------------------------------------
 procedimento Pagina_Dezesseis()
