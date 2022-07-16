@@ -10,7 +10,7 @@ inicio
       escreval(" M E N U   I N I C I A L ")
       escreval("-------------------------")
       escreval("| 1 |  Iniciar")
-      escreval("| 2 |  Sinopse")
+      escreval("| 2 |  Leia-me")
       escreval("| 3 |  Fechar")
       escreval("_________________________")
       escreva("Decisão => ")
@@ -24,6 +24,7 @@ inicio
       caso "3"
            LimpaTela
       outrocaso
+               Capa()
                LimpaTela
       fimescolha
 fimprocedimento
@@ -117,6 +118,10 @@ inicio
       escreval("ação correspondente disponivel em cada")
       escreval("uma das 'páginas' do livro.")
       escreval()
+      escreval("Após avançar da primeira")
+      escreval("página não será mais")
+      escreval("possível retroceder.")
+      escreval()
       escreva("[ENTER] Voltar.")
       leia(enter)
       
@@ -142,10 +147,21 @@ inicio
       escreval("Você encontrará o dragão do outro lado.")
       escreval()
       escreval("[1] Avançar.")
+      escreval()
+      escreva("[ENTER] Voltar.")
+      escreval()
+      
       escreval("_________________________")
       escreva("Decisão => ")
       leia(opPagUm)
-      Pagina_Dois()
+      
+      escolha opPagUm
+      caso "1"
+           Pagina_Dois()
+      outrocaso
+               LimpaTela
+               Capa()
+      fimescolha
 fimprocedimento
 //------------------------------------------------------------------------------
 procedimento Pagina_Dois()
