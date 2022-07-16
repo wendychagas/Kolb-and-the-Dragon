@@ -272,7 +272,7 @@ inicio
       escreval("A cabeça do machado se alojou no pescoço")
       escreval("duro e escamoso da fera. Ele gemeu e se debateu,")
       escreval("mas Kolb segurou e acabou cortando o pescoço,")
-      escrevcal("matando a fera. Kolb voltou para casa vitorioso,")
+      escreval("matando a fera. Kolb voltou para casa vitorioso,")
       escreval("e sua aldeia nunca mais foi incomodada pelo dragão.")
       escreval()
       escreval("O   F I M !!")
@@ -382,6 +382,9 @@ inicio
       escreval("-------------------------")
       escreval()
       escreva("[ENTER] Reiniciar.")
+      leia(enter)
+      
+      LimpaTela
       MenuInicial()
 fimprocedimento
 //------------------------------------------------------------------------------
